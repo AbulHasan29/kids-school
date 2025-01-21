@@ -62,3 +62,73 @@
     list-style: none;
     margin-right: 32px;
 }
+.hamburger-icon{
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+
+/* Style Banner section */
+.banner{
+    margin: 122px 138px 16px 144px;
+    /* max-width: 850px; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* margin-bottom: 50px; */
+
+}
+.banner-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-secondary{
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.banner-img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsive for mobile device */
+
+@media screen and (max-width:480px)
+{
+    .nav-links-container{
+        display: none;
+    }
+    .logo-title{
+        display: none;
+    }
+    .btn-primary{
+        display: none;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    .navbar{
+        margin: 0 auto;
+    }
+    .banner-img-container{
+        order: -1;
+        height:400px ;
+        width:300px ;
+        margin-bottom: 50px;
+    }
+    .banner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
