@@ -75,7 +75,9 @@
 
 /* Style Banner section */
 .banner{
-    margin: 122px 138px 16px 144px;
+    max-width: 1440px;
+    margin:0 auto;
+    /* margin: 122px 138px 16px 144px; */
     /* max-width: 850px; */
     /* margin: 0 auto; */
     /* text-align: center; */
@@ -124,10 +126,12 @@ main>section{
     /* color:#fff; */
 }
 .curriculum{
-    margin:130px 80px 20px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .curriculum-title{
+    margin-top:70px;
      font-weight: 700;
      font-size: 2.75rem;
      text-align: center;
@@ -141,7 +145,7 @@ main>section{
 .curriculum-card{
     border: none;
     border-radius: 18px;
-    max-width: 365px;
+    /* max-width: 365px; */
     height: auto;
     text-align: center;
     justify-content: center;
@@ -191,10 +195,36 @@ main>section{
     border: none;
     margin-top: 33px;
 }
-
+.arrow-btn{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* border: 1px solid tomato; */
+}
+.btn1{
+    margin-top: 80px;
+    background-color: #FEA301;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.btn2{
+    margin-top: 80px;
+    background-color: #FEA301;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+}
 /* Responsive for mobile device */
 
-@media screen and (max-width:480px)
+@media screen and (max-width:576px)
 {
     .nav-links-container{
         display: none;
@@ -210,6 +240,7 @@ main>section{
     }
     .navbar{
         margin: 0 auto;
+        border-bottom: 2px solid orange;
     }
     .banner-img-container{
         order: -1;
@@ -223,13 +254,15 @@ main>section{
         text-align: center;
     }
     /* Responsive curriculum section */
-    .curriculum-card-container{
-        grid-template-columns: repeat(1,1fr);
-        align-items: center;
-    }
-    .curriculum-card{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-   
+    
+     .curriculum-card-container{
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+     }
+     .curriculum-title{
+        font-size: 1.5rem;
+     }
+     .arrow-btn{
+        display: none;
+     }
 }
