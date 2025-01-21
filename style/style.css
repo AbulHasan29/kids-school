@@ -296,6 +296,7 @@ main>section{
 }
 .story-btn{
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 .marquee-section {
     background-color: #f0f8ff;
@@ -303,6 +304,64 @@ main>section{
     font-size: 16px;
     color: #333; 
     text-align: center;
+}
+/* Style for footer section */
+.bg-color{
+    background-color: #01ACFD;
+}
+.foot{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.edu-title{
+    font-weight: 700;
+    font-size: 2.75rem ;
+    color: white;
+}
+.edu-logo img{
+    width:82px;
+    height:81px;
+}
+.edu-logo{
+    align-items:center;
+}
+.edu-description{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.school{
+    margin-left: 60px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+.school-link{
+    text-decoration: none;
+    color: white;
+}
+.school-item{
+    flex-direction: column;
+    gap: 10px;
+}
+.school-title{
+    color: white;
+    font-size: 1.5rem;
+    font-weight:700 ;
+}
+.touch-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: white;
+}
+.education{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: 10px;
+}
+.touch{
+    margin-top:100px;
+    margin-bottom: 120px;
 }
 /* Responsive for mobile device */
 
@@ -355,4 +414,21 @@ main>section{
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
      }
+     /*Responsive footer section  */
+     .foot{
+        grid-template-columns: repeat(1,1fr);
+     }
+     .education{
+        margin-top: 100px;
+        margin-bottom:30px;
+        margin-left: 20px;
+    }
+    .school{
+        margin-bottom:30px;
+        margin-left: 20px;
+    }
+    .touch{
+        margin-bottom:30px;
+        margin-left: 20px;
+    }
 }
