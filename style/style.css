@@ -222,6 +222,88 @@ main>section{
     font-size: 2rem;
     font-weight: 600;
 }
+
+/* Style Of our stories */
+
+.stories{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.story-card1{
+    border-radius: 16px;
+    margin-right: 20px;
+    /* border: 2px solid tomato; */
+}
+.story-card1 img{
+    width: 100%;
+    border-radius:16px;
+}
+.story-btn1{
+    background-color: #3CD8E8;
+    border: none;
+    border-radius: 48px;
+    width: 160px;
+    height: 40px;
+    position: relative;
+    bottom: 20px;
+    right:90px;
+}
+.story-card1-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.story-card1-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+}
+.story-card2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.story-card2 img{
+    width: 100%;
+    border-radius: 16px ;
+}
+.story-card2-title{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.story-card-btn1{
+    width: 100px;
+    height: 30px;
+    background-color: #95B226;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    bottom: 15px;
+
+}
+.story-card-btn2{
+    width: 100px;
+    height: 30px;
+    background-color: #5D58F0;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    position: relative;
+    bottom: 15px;
+}
+.story-box{
+     background: linear-gradient(to bottom,#FFFF 40%,#FFD283);
+}
+.story-btn{
+    margin-top: 80px;
+}
+.marquee-section {
+    background-color: #f0f8ff;
+    padding: 10px 0; 
+    font-size: 16px;
+    color: #333; 
+    text-align: center;
+}
 /* Responsive for mobile device */
 
 @media screen and (max-width:576px)
@@ -264,5 +346,13 @@ main>section{
      }
      .arrow-btn{
         display: none;
+     }
+     /* Responsive our stories section */
+     .story-card1{
+        display: none;
+     }
+     .story-card2{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
      }
 }
