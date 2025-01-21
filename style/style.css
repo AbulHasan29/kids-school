@@ -25,6 +25,10 @@
 .color-4{
     color:#5D58EF;
 }
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .btn-primary{
     background-color: #FEA301;
     padding: 10px 50px;
@@ -101,6 +105,93 @@
 }
 
 
+/* style curriculum section */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+    margin-top: 130px;
+}
+.bg-image{
+    background-image: url('../assets/bg.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0px 60px;
+    /* margin: 122px 138px 16px 144px; */
+    /* color:#fff; */
+}
+.curriculum{
+    margin:130px 80px 20px 80px;
+}
+
+.curriculum-title{
+     font-weight: 700;
+     font-size: 2.75rem;
+     text-align: center;
+}
+
+.curriculum-card-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 28px;
+}
+.curriculum-card{
+    border: none;
+    border-radius: 18px;
+    max-width: 365px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    background:linear-gradient(to top,#FFFFFF 40%,#DEF5FF);
+}
+.box2{
+    background: linear-gradient(to top,#FFFFFF 40% ,#FFF4DC);
+}
+.box3{
+    background: linear-gradient(to top,#FFFF 40% ,#F2E8FF);
+}
+.curriculum-card img{
+    height: 140px;
+    width: 140px;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #808080;
+    /* margin-bottom: 10px; */
+}
+.card1-btn{
+    color:#64C8FF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 33px;
+}
+.card2-btn{
+    color:#F0AA00;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-top:15px;
+}
+.card3-btn{
+    color:#8700FF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-top: 33px;
+}
+
 /* Responsive for mobile device */
 
 @media screen and (max-width:480px)
@@ -131,4 +222,14 @@
         align-items: center;
         text-align: center;
     }
+    /* Responsive curriculum section */
+    .curriculum-card-container{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+    .curriculum-card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+   
 }
